@@ -1,6 +1,6 @@
 <?php
 function get_users($who = 'online', $from = ''){
-	$db = new mysqli("localhost", "root", "2b2HGuzx91", "czat");
+	$db = new mysqli("host", "user", "pass", "database");
 	if($who == 'all'){
 		$users_all_db = $db->query("SELECT * FROM `users`");
 		$nr = array();
